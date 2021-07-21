@@ -3,6 +3,8 @@ import cors from 'cors'
 import { json } from 'body-parser'
 import TaskRoute from './routes/tasks'
 import Connect from './utils/connect' 
+import dotenv from 'dotenv'
+dotenv.config()
 
 const app = express()
 

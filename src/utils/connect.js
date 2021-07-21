@@ -1,7 +1,7 @@
 import Mongoose from "mongoose"
 
 const Connect = async () => {
-    const uri = 'mongodb+srv://dagotdadope:donda@cluster0.e9p5w.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+    const uri = process.env.MONGO_URI
     const options = {
         useUnifiedTopology: true,
         useNewUrlParser: true,
